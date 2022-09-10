@@ -1,0 +1,20 @@
+{
+  "name": "event-website",
+  "version": "1.0.0",
+  "description": "Event Website to announce upcoming NFT Haïti Conference",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didierganthier/event-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didierganthier/event-website/issues"
+  },
+  "homepage": "https://github.com/didierganthier/event-website#readme"
+}
