@@ -646,6 +646,22 @@ video {
   height: 1.5rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -660,6 +676,14 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .scale-0 {
@@ -696,6 +720,10 @@ video {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -806,6 +834,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pr-4 {
@@ -992,6 +1025,10 @@ video {
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1039,6 +1076,12 @@ video {
   .md\:text-blue-700 {
     --tw-text-opacity: 1;
     color: rgb(29 78 216 / var(--tw-text-opacity));
+  }
+
+  .md\:shadow-md {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .md\:hover\:bg-transparent:hover {
