@@ -646,14 +646,19 @@ video {
   margin-right: auto;
 }
 
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .mx-32 {
   margin-left: 8rem;
   margin-right: 8rem;
+}
+
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .mx-16 {
@@ -664,11 +669,6 @@ video {
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
-}
-
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
 
 .my-10 {
@@ -839,6 +839,10 @@ video {
   height: 5rem;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -883,10 +887,6 @@ video {
   height: 10rem;
 }
 
-.h-\[80px\] {
-  height: 80px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -923,6 +923,10 @@ video {
   width: 500px;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -953,10 +957,6 @@ video {
 
 .w-24 {
   width: 6rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .w-16 {
@@ -1348,6 +1348,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1361,11 +1366,6 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.px-36 {
-  padding-left: 9rem;
-  padding-right: 9rem;
 }
 
 .px-32 {
@@ -1434,6 +1434,14 @@ video {
   padding-bottom: 2rem;
 }
 
+.pl-44 {
+  padding-left: 11rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1476,14 +1484,6 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pl-44 {
-  padding-left: 11rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
 }
 
 .text-center {
@@ -2114,16 +2114,6 @@ video {
     padding: 0px;
   }
 
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .md\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2132,6 +2122,16 @@ video {
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
 
   .md\:pt-20 {
@@ -2159,11 +2159,6 @@ video {
     line-height: 1.5rem;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2187,6 +2182,11 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:text-lg {
