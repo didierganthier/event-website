@@ -20,7 +20,17 @@
           </ul>
         </nav>
         <nav class="py-4 md:shadow-md md:bg-white px-4">
-          <svg class="w-10 h-10 md:hidden cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <div class="hidden fixed top-0 left-0 w-full h-screen bg-[#3E3E3E] z-10 opacity-90 mobile-menu md:hidden">
+            <svg class="w-10 h-10 text-white fixed right-8 top-10 close-btn hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <ul class="flex flex-col justify-center text-center my-20">
+              <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="/about.html">About</a></li>
+              <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Program</a></li>
+              <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Join</a></li>
+              <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Sponsor</a></li>
+              <li class="cursor-pointer scale-100 hover:scale-105 border-4 border-[#F04A1C] my-10 text-3xl text-[#F04A1C] px-2 mx-auto">GET NFT</li>
+            </ul>
+          </div>
+          <svg class="w-10 h-10 md:hidden cursor-pointer hamburger" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             <div class="hidden md:flex justify-between items-center mx-32">
                 <div class="flex items-center">
                 <a href="/index.html">
@@ -119,7 +129,7 @@
     
             <div class="md:mb-6">
               <input
-                type="text"
+                type="email"
                 class="
                   form-control
                   block
