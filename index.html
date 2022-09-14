@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://didierganthier.github.io/event-website/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>NFT HT</title>
 </head>
-<body>
-    <header class="bg-[url('/images/header.png')] overflow-clip">
-        <nav class="bg-[#3E3E3E] w-full md:flex justify-end text-white space-x-6 pr-36 py-2 hidden">
+<body class="font-lato">
+    <header class="bg-header-texture overflow-clip">
+        <nav class="bg-[#272A31] w-full md:flex justify-end text-white space-x-6 pr-36 py-2 hidden">
           <i class="fa fa-facebook pt-1 cursor-pointer scale-100 hover:scale-105"></i>
           <i class="fa fa-twitter pt-1 cursor-pointer scale-100 hover:scale-105"></i>
           <ul class="flex space-x-6">
@@ -20,148 +23,117 @@
           </ul>
         </nav>
         <nav class="py-4 md:shadow-md md:bg-white px-4">
-          <svg class="w-10 h-10 md:hidden cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <div class="hidden fixed top-0 left-0 w-full h-screen bg-[#3E3E3E] z-10 opacity-90 mobile-menu md:hidden">
+            <svg class="w-10 h-10 text-white fixed right-8 top-10 close-btn hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <ul class="flex flex-col justify-center text-center my-20">
+              <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="https://didierganthier.github.io/event-website/about.html">About</a></li>
+              <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Program</a></li>
+              <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Join</a></li>
+              <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Sponsor</a></li>
+              <li class="cursor-pointer scale-100 hover:scale-105 border-4 border-[#EC5242] my-10 text-3xl text-[#EC5242] px-2 mx-auto">GET NFT</li>
+            </ul>
+          </div>
+          <svg class="w-10 h-10 md:hidden cursor-pointer hamburger" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <div class="hidden md:flex justify-between items-center mx-32">
+                <div class="flex items-center">
+                <a href="https://didierganthier.github.io/event-website//index.html">
+                  <img class="w-32" src="https://didierganthier.github.io/event-website/images/logobigger.png" height="100" alt="logo">
+                </a>
+                </div>
+                <ul class="hidden md:flex space-x-6">
+                <li class="cursor-pointer scale-100 hover:scale-105"><a href="https://didierganthier.github.io/event-website/about.html">About</a></li>
+                <li class="cursor-pointer scale-100 hover:scale-105"><a href="#">Program</a></li>
+                <li class="cursor-pointer scale-100 hover:scale-105"><a href="#">Join</a></li>
+                <li class="cursor-pointer scale-100 hover:scale-105"><a href="#">Sponsor</a></li>
+                <li class="cursor-pointer scale-100 hover:scale-105 border-4 border-[#EC5242] text-sm text-[#EC5242] px-2">GET NFT</li>
+                </ul>
+            </div>
         </nav>
-        <h3 class="text-[#F04A1C] text-xl pt-10 pl-4">"Hello NFT Lovers"</h3>
-        <h1 class="text-4xl font-extrabold w-screen px-4 text-transparent bg-clip-text bg-[url('/images/backgroundPattern.png')]">NFT CAP-HAITIAN CONFERENCE 2023</h1>
-        <div class="px-1 mt-10 border-white mx-4 shadow shadow-white">
-          <div class="border-white border-4 bg-[#F7F7F7] p-4 text-sm">
+        <h3 class="text-[#EC5242] text-xl pt-10 pl-4 md:text-3xl md:mx-36 md:pt-36 font-lato">"Hello NFT Lovers"</h3>
+        <h1 class="text-4xl font-extrabold w-screen px-4 text-transparent bg-clip-text bg-background-pattern md:text-6xl md:mx-36">NFT CAP-HAITIAN CONFERENCE 2023</h1>
+        <div class="px-1 mt-10 border-white mx-4 shadow shadow-white md:mx-44 md:text-center">
+          <div class="border-white border-4 bg-[#F7F7F7] p-4 text-sm md:text-lg font-lato">
           A joyful celebration believing in the value of openness and
           sharing, creating a positive change with people from over
           80 countries is taking place in October, in Okap.
           </div>
         </div>
-        <p class="px-4 pt-10 text-xl flex justify-center font-extrabold">2023.10.19(THU) ~20(FRI)</p>
-        <p class="px-4 pt-2 pb-10 flex text-center">@Citadelle Laferrière in Okap, Palais Sans Souci and more</p>
+        <p class="px-4 pt-10 text-xl flex justify-center font-extrabold md:text-3xl">2023.10.19(THU) ~20(FRI)</p>
+        <p class="px-4 pt-2 pb-10 flex text-center justify-center md:text-xl font-lato">@Citadelle Laferrière in Okap, Palais Sans Souci and more</p>
     </header>
-    <section class="bg-[url('/images/pattern.jpeg')]">
-      <p class="flex justify-center pt-10 text-white text-xl">Main Program</p>
-      <hr class="border-[#F04A1C] border mx-36 my-5"/>
-      <div class="flex items-center mx-4 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4">
-        <img class="w-12 h-12" src="/images/lecture.png" alt="lecture">
-        <p class="text-[#F04A1C] pr-5 text-lg w-1/4">Lecture</p>
-        <p class="text-white text-sm w-2/4">Listen to the speakers from various
+    <section class="bg-pattern-bg md:px-10 md:py-10">
+      <p class="flex justify-center pt-10 text-white text-xl md:text-3xl">Main Program</p>
+      <hr class="border-[#EC5242] border mx-36 my-5"/>
+      <div class="grid grid-cols-1 md:grid-cols-5">
+      <div class="flex md:flex-col items-center mx-4 md:mx-2 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4 md:gap-0">
+        <img class="w-12 h-12" src="https://didierganthier.github.io/event-website/images/lecture.png" alt="lecture">
+        <p class="text-[#EC5242] pr-5 text-lg w-1/4 md:w-full text-center md:mx-auto md:justify-center">Lecture</p>
+        <p class="text-white text-sm w-2/4 md:text-center">Listen to the speakers from various
           countries about the messeges of
           sharing and opening.
         </p>
       </div>
-      <div class="flex items-center mx-4 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4">
-        <img class="w-12 h-12" src="/images/exhibition.png" alt="lecture">
-        <p class="text-[#F04A1C] pr-5 text-lg w-1/4">CC Exhibition</p>
-        <p class="text-white text-sm w-2/4">Listen to the speakers from various
+      <div class="flex md:flex-col items-center mx-4 md:mx-2 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4 md:gap-0">
+        <img class="w-12 h-12" src="https://didierganthier.github.io/event-website/images/exhibition.png" alt="lecture">
+        <p class="text-[#EC5242] pr-5 text-lg w-1/4 md:w-full text-center md:justify-center">CC Exhibition</p>
+        <p class="text-white text-sm w-2/4 md:text-center">Listen to the speakers from various
           countries about the messeges of
           sharing and opening.
         </p>
       </div>
-      <div class="flex items-center mx-4 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4">
-        <img class="w-12 h-12" src="/images/forum.png" alt="lecture">
-        <p class="text-[#F04A1C] pr-5 text-lg w-1/4">Forum</p>
-        <p class="text-white text-sm w-2/4">Listen to the speakers from various
+      <div class="flex md:flex-col items-center mx-4 md:mx-2 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4 md:gap-0">
+        <img class="w-12 h-12" src="https://didierganthier.github.io/event-website/images/forum.png" alt="lecture">
+        <p class="text-[#EC5242] pr-5 text-lg w-1/4 md:w-full text-center md:justify-center">Forum</p>
+        <p class="text-white text-sm w-2/4 md:text-center">Listen to the speakers from various
           countries about the messeges of
           sharing and opening.
         </p>
       </div>
-      <div class="flex items-center mx-4 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4">
-        <img class="w-12 h-12" src="/images/workshop.png" alt="lecture">
-        <p class="text-[#F04A1C] pr-5 text-lg w-1/4">Workshop</p>
-        <p class="text-white text-sm w-2/4">Listen to the speakers from various
+      <div class="flex md:flex-col items-center mx-4 md:mx-2 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4 md:gap-0">
+        <img class="w-12 h-12" src="https://didierganthier.github.io/event-website/images/workshop.png" alt="lecture">
+        <p class="text-[#EC5242] pr-5 text-lg w-1/4 md:w-full text-center md:justify-center">Workshop</p>
+        <p class="text-white text-sm w-2/4 md:text-center">Listen to the speakers from various
           countries about the messeges of
           sharing and opening.
         </p>
       </div>
-      <div class="flex items-center mx-4 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4 ">
-        <img class="w-12 h-12" src="/images/ignite.png" alt="lecture">
-        <p class="text-[#F04A1C] pr-5 text-lg w-1/4">CC Ignite</p>
-        <p class="text-white text-sm w-2/4">Listen to the speakers from various
+      <div class="flex md:flex-col items-center mx-4 md:mx-2 mt-8 mb-3 py-2 px-2 bg-white bg-opacity-10 gap-4 md:gap-0">
+        <img class="w-12 h-12" src="https://didierganthier.github.io/event-website/images/ignite.png" alt="lecture">
+        <p class="text-[#EC5242] pr-5 text-lg w-1/4 md:w-full text-center md:justify-center">CC Ignite</p>
+        <p class="text-white text-sm w-2/4 md:text-center">Listen to the speakers from various
           countries about the messeges of
           sharing and opening.
         </p>
       </div>
-      <button class="bg-[#F04A1C] text-white py-5 px-5 mx-16 my-10">Join CC Global Summit 2015</button>
+      </div>
+      <button class="bg-[#EC5242] text-white py-5 px-5 mx-16 my-10 md:flex md:justify-center md:mx-auto">Join CC Global Summit 2015</button>
     </section>
     <section>
-      <p class="flex justify-center pt-10 text-black text-xl">Featured Speakers</p>
-      <hr class="border-[#F04A1C] border mx-36 my-5"/>
-      <div class="mx-4 my-10 flex">
-        <img class="w-32 h-32" src="/images/assets/speaker_01.png" alt="speaker Yocha">
-        <div class="px-4 flex flex-col justify-between">
-          <p class="font-bold text-xl">Yochai Benkler</p>
-          <p class="text-xs text-[#F04A1C] py-2">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr class="py-2"/>
-          <p class="text-xs">Benkler studies commons-based peer production, and published his serminal book The Wealth of Networks in 2006.</p>
-        </div>
-      </div>
-      <div class="mx-4 my-10 flex">
-        <img class="w-32 h-32" src="/images/assets/speaker_02.png" alt="speaker Yocha">
-        <div class="px-4 flex flex-col justify-between">
-          <p class="font-bold text-xl">Yochai Benkler</p>
-          <p class="text-xs text-[#F04A1C] py-2">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr class="py-2"/>
-          <p class="text-xs">Benkler studies commons-based peer production, and published his serminal book The Wealth of Networks in 2006.</p>
-        </div>
-      </div>
-      <div class="mx-4 my-10 flex">
-        <img class="w-32 h-32" src="/images/assets/speaker_03.png" alt="speaker Yocha">
-        <div class="px-4 flex flex-col justify-between">
-          <p class="font-bold text-xl">Yochai Benkler</p>
-          <p class="text-xs text-[#F04A1C] py-2">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr class="py-2"/>
-          <p class="text-xs">Benkler studies commons-based peer production, and published his serminal book The Wealth of Networks in 2006.</p>
-        </div>
-      </div>
-      <div class="mx-4 my-10 flex">
-        <img class="w-32 h-32" src="/images/assets/speaker_04.png" alt="speaker Yocha">
-        <div class="px-4 flex flex-col justify-between">
-          <p class="font-bold text-xl">Yochai Benkler</p>
-          <p class="text-xs text-[#F04A1C] py-2">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr class="py-2"/>
-          <p class="text-xs">Benkler studies commons-based peer production, and published his serminal book The Wealth of Networks in 2006.</p>
-        </div>
-      </div>
-      <div class="mx-4 my-10 flex">
-        <img class="w-32 h-32" src="/images/assets/speaker_05.png" alt="speaker Yocha">
-        <div class="px-4 flex flex-col justify-between">
-          <p class="font-bold text-xl">Yochai Benkler</p>
-          <p class="text-xs text-[#F04A1C] py-2">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr class="py-2"/>
-          <p class="text-xs">Benkler studies commons-based peer production, and published his serminal book The Wealth of Networks in 2006.</p>
-        </div>
-      </div>
-      <div class="mx-4 my-10 flex">
-        <img class="w-32 h-32" src="/images/assets/speaker_06.png" alt="speaker Yocha">
-        <div class="px-4 flex flex-col justify-between">
-          <p class="font-bold text-xl">Yochai Benkler</p>
-          <p class="text-xs text-[#F04A1C] py-2">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
-          <hr class="py-2"/>
-          <p class="text-xs">Benkler studies commons-based peer production, and published his serminal book The Wealth of Networks in 2006.</p>
-        </div>
+      <p class="flex justify-center pt-10 text-black text-xl md:text-3xl">Featured Speakers</p>
+      <hr class="border-[#EC5242] border mx-36 my-5 md:mx-[800px]"/>
+      <div class="grid grid-cols-1 md:grid-cols-2 speakers">
+
       </div>
     </section>
     <hr/>
     <section class="mb-12">
-      <p class="flex justify-center pt-10 text-black text-xl">Partners</p>
-      <hr class="border-[#F04A1C] border mx-40 my-5"/>
-      <!--Use gridview for sponsors-->
-      <div class="grid grid-cols-2 md:grid-cols-4 px-10 md:px-36 gap-2 my-10">
-        <img class="w-full h-16" src="/images/sponsors/airbnb.png" alt="partner 1">
-        <img class="w-full h-16" src="/images/sponsors/googlekorea.png" alt="partner 2">
-        <img class="w-full h-16" src="/images/sponsors/kakao.png" alt="partner 3">
-        <img class="w-full h-16" src="/images/sponsors/mozilla.png" alt="partner 4">
-      </div>
+      <img class="w-full md:hidden" src="https://didierganthier.github.io/event-website/images/partner.png" alt="line">
+      <img class="w-full hidden md:block" src="https://didierganthier.github.io/event-website/images/partnerdesktop.png" alt="line">
     </section>
-    <footer class="bg-gray-100 text-center bg-[url('/images/pattern.jpeg')]">
+    <footer class="bg-white text-center">
       <div class="px-6 pt-6">
-        <form action="">
+        <form action="https://formspree.io/f/xdojkarj" method="post">
           <div class="grid md:grid-cols-3 gird-cols-1 gap-4 justify-center items-center">
             <div class="md:ml-auto md:mb-6">
-              <p class="text-white">
+              <p class="text-black">
                 <strong>Sign up for our newsletter</strong>
               </p>
             </div>
     
             <div class="md:mb-6">
               <input
-                type="text"
+                type="email"
+                name="email"
                 class="
                   form-control
                   block
@@ -184,15 +156,15 @@
             </div>
     
             <div class="md:mr-auto mb-6">
-              <button type="button" class="inline-block px-6 py-2.5 bg-[#F04A1C] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-[#ee7f60] hover:shadow-lg focus:bg-[#ee7f60] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Subscribe</button>
+              <input type="submit" value="Subscribe" class="inline-block px-6 py-2.5 bg-[#EC5242] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-[#ee7f60] hover:shadow-lg focus:bg-[#ee7f60] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"/>
             </div>
           </div>
         </form>
       </div>
     
-      <div class="text-center text-white p-4 text-opacity-80">
+      <div class="text-center text-black p-4 text-opacity-80">
         © 2021 Copyright:
-        <a class="text-white text-opacity-50" href="https://tailwind-elements.com/">NFT CAP-HAITIAN</a>
+        <a class="text-black text-opacity-50" href="https://tailwind-elements.com/">NFT CAP-HAITIAN</a>
       </div>
     </footer>
 </body>

@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://didierganthier.github.io/event-website/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>About</title>
 </head>
-<body>
-    <header class="bg-[url('/images/header.png')] overflow-clip">
-        <nav class="bg-[#3E3E3E] w-full md:flex justify-end text-white space-x-6 pr-36 py-2 hidden">
+<body class="font-lato">
+    <header class="bg-header-texture overflow-clip">
+        <nav class="bg-[#272A31] w-full md:flex justify-end text-white space-x-6 pr-36 py-2 hidden">
           <i class="fa fa-facebook pt-1 cursor-pointer scale-100 hover:scale-105"></i>
           <i class="fa fa-twitter pt-1 cursor-pointer scale-100 hover:scale-105"></i>
           <ul class="flex space-x-6">
@@ -20,11 +23,35 @@
           </ul>
         </nav>
         <nav class="py-4 md:shadow-md md:bg-white px-4">
-          <svg class="w-10 h-10 md:hidden cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <div class="hidden fixed top-0 left-0 w-full h-screen bg-[#3E3E3E] z-10 opacity-90 mobile-menu md:hidden">
+                <svg class="w-10 h-10 text-white fixed right-8 top-10 close-btn hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                <ul class="flex flex-col justify-center text-center my-20">
+                  <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="https://didierganthier.github.io/event-website/about.html">About</a></li>
+                  <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Program</a></li>
+                  <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Join</a></li>
+                  <li class="cursor-pointer scale-100 hover:scale-105 text-3xl text-white py-10"><a href="#">Sponsor</a></li>
+                  <li class="cursor-pointer scale-100 hover:scale-105 border-4 border-[#EC5242] my-10 text-3xl text-[#EC5242] px-2 mx-auto">GET NFT</li>
+                </ul>
+            </div>
+          <svg class="w-10 h-10 md:hidden cursor-pointer hamburger" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <div class="hidden md:flex justify-between items-center mx-32">
+                <div class="flex items-center">
+                    <a href="https://didierganthier.github.io/event-website/index.html">
+                        <img class="w-32" src="https://didierganthier.github.io/event-website/images/logobigger.png" height="100" alt="logo">
+                    </a>
+                </div>
+                <ul class="hidden md:flex space-x-6">
+                <li class="cursor-pointer scale-100 hover:scale-105 text-[#EC5242]">About</li>
+                <li class="cursor-pointer scale-100 hover:scale-105">Program</li>
+                <li class="cursor-pointer scale-100 hover:scale-105">Join</li>
+                <li class="cursor-pointer scale-100 hover:scale-105">Sponsor</li>
+                <li class="cursor-pointer scale-100 hover:scale-105 border-4 border-[#EC5242] text-sm text-[#EC5242] px-2">GET NFT</li>
+                </ul>
+            </div>
         </nav>
-        <h3 class="text-[#F04A1C] text-xl pt-10 flex justify-center">"Hello NFT Lovers"</h3>
-        <h1 class="text-3xl font-extrabold flex justify-center text-center text-[#F04A1C]">NFT CAP-HAITIAN CONFERENCE 2023</h1>
-        <div class="px-1 mt-10 border-2 mx-4 shadow shadow-white bg-white text-center py-2">
+        <h3 class="text-[#EC5242] text-xl pt-10 flex justify-center md:justify-start md:hidden">"Hello NFT Lovers"</h3>
+        <h1 class="text-3xl font-extrabold flex justify-center text-center text-[#EC5242] md:pt-36 md:text-5xl">NFT CAP-HAITIAN CONFERENCE 2023</h1>
+        <div class="px-1 mt-10 border-2 mx-4 shadow shadow-white bg-white text-center py-2 md:mx-44 md:text-xl md:px-10 md:py-10">
             The Global Summit brings together the community of
             experts, academics, and activists who comprise the Creative
             Commons affiliate network in a different country every two.
@@ -35,40 +62,41 @@
         <span class="underline flex justify-center text-sm pb-8">nftokap@hba.org</span>
     </header>
     <section>
-        <p class="pt-10 text-2xl text-center px-10 font-semibold">NFT CAP-HAITIAN CONFERENCE 2023 Logo</p>
-        <hr class="border-[#F04A1C] my-5 mx-44"/>
-        <p class="px-10 text-sm text-center pb-10">The logo of NFT CAP-HAITIAN CONFERENCE was decided through the logo competition from 8 June to 7 July</p>
-        <div class="border mx-4 mb-10">
-            <img class="mx-auto" src="/images/logo.png" alt="logo">
+        <p class="pt-10 text-2xl text-center px-10 font-semibold md:text-3xl">NFT CAP-HAITIAN CONFERENCE 2023 Logo</p>
+        <hr class="border-[#EC5242] my-5 mx-44 md:mx-[800px]"/>
+        <p class="px-10 text-sm text-center pb-10 md:text-xl">The logo of NFT CAP-HAITIAN CONFERENCE was decided through the logo competition from 8 June to 7 July</p>
+        <div class="border mx-4 mb-10 md:mx-44">
+            <img class="mx-auto" src="https://didierganthier.github.io/event-website/images/logo.png" alt="logo">
         </div>
         <hr/>
-        <p class="pt-10 text-2xl text-center px-10 font-semibold">See the past NFT CAP-HAITIAN CONFERENCE</p>
-        <hr class="border-[#F04A1C] my-5 mx-44"/>
+        <p class="pt-10 text-2xl text-center px-10 font-semibold md:text-3xl">See the past NFT CAP-HAITIAN CONFERENCE</p>
+        <hr class="border-[#EC5242] my-5 mx-44 md:mx-[800px]"/>
         <p class="px-10 text-sm text-center pb-10">Take a look at the last NFT CAP-HAITIAN CONFERENCE which took place in 2020 in NFT CAP-HAITIAN</p>
         <div class="grid grid-cols-1 md:grid-cols-2 justify-center mb-10 gap-12">
             <!--Images with background color and background imaage-->
-            <div class="bg-[#F04A1C] bg-[url('/images/past.jpg')] mx-4 bg-blend-multiply bg-cover bg-center bg-no-repeat h-[400px]">
+            <div class="bg-[#EC5242] bg-past-first mx-4 bg-blend-multiply bg-cover bg-center bg-no-repeat h-[400px]">
                 <div class="flex flex-col justify-center h-full">
                     <p class="text-center text-white text-2xl font-semibold">2020</p>
                     <p class="text-center text-white text-xl font-semibold">NFT CAP-HAITIAN CONFERENCE</p>
                 </div>
             </div>
-            <div class="bg-[#F04A1C] bg-[url('/images/past2.jpg')] mx-4 bg-blend-multiply bg-cover bg-center bg-no-repeat h-[400px]">
+            <div class="bg-[#EC5242] bg-past-second mx-4 bg-blend-multiply bg-cover bg-center bg-no-repeat h-[400px]">
                 <div class="flex flex-col justify-center h-full">
                     <p class="text-center text-white text-2xl font-semibold">2018</p>
                     <p class="text-center text-white text-xl font-semibold">NFT CAP-HAITIAN CONFERENCE</p>
                 </div>
             </div>
         </div>
-        <img class="w-full md:hidden" src="/images/partner.png" alt="line">
-        <img class="w-full hidden md:block" src="/images/partnerdesktop.png" alt="line">
+        <img class="w-full md:hidden" src="https://didierganthier.github.io/event-website/images/partner.png" alt="line">
+        <img class="w-full hidden md:block" src="https://didierganthier.github.io/event-website/images/partnerdesktop.png" alt="line">
     </section>
-    <footer class="bg-white text-[#3E3E3E] flex mx-auto justify-center">
-        <img class="w-1/2 md:w-1/6 h-1/12" src="/images/logo.png" alt="footer">
+    <footer class="bg-[#272A31] text-white flex mx-auto justify-center">
+        <img class="w-1/2 md:w-1/6 h-1/12" src="https://didierganthier.github.io/event-website/images/logo.png" alt="footer">
         <div class="flex flex-col justify-center items-center py-10">
             <p class="text-center text-sm font-semibold md:text-base">2023 NFT CAP-HAITIAN CONFERENCE.</p>
             <p class="text-center text-sm font-semibold">Some Rights Reserved</p>
         </div>
     </footer>
+    <script src="about.js"></script>
 </body>
 </html>

@@ -33,6 +33,6 @@ Contributions, issues, and feature requests are welcome!
 
 If you like this project you can support just by giving a Star.
 
-## Web designer
-- Behance: [https://www.behance.net/adagio07]
+## Acknowledgments
+Original design idea by [Cindy Shin](https://www.behance.net/adagio07) in Behance.
 
