@@ -1363,7 +1363,15 @@ video {
 }
 
 .bg-header-texture {
-  background-image: url('/images/header.png');
+  background-image: url('https://didierganthier.github.io/event-website/images/header.png');
+}
+
+.bg-past-second {
+  background-image: url('https://didierganthier.github.io/event-website/images/past2.jpg');
+}
+
+.bg-past-first {
+  background-image: url('https://didierganthier.github.io/event-website/images/past.jpg');
 }
 
 .bg-\[url\(\'images\/header\.png\'\)\] {
@@ -1379,19 +1387,11 @@ video {
 }
 
 .bg-background-pattern {
-  background-image: url('/images/backgroundPattern.png');
+  background-image: url('https://didierganthier.github.io/event-website/images/backgroundPattern.png');
 }
 
 .bg-pattern-bg {
-  background-image: url('/images/pattern.jpeg');
-}
-
-.bg-past-second {
-  background-image: url('/images/past2.jpg');
-}
-
-.bg-past-first {
-  background-image: url('/images/past.jpg');
+  background-image: url('https://didierganthier.github.io/event-website/images/pattern.jpeg');
 }
 
 .bg-cover {
