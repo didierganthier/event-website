@@ -11,7 +11,7 @@ Event Website to announce upcoming NFT Haïti Conference
 
 ## Live Demo
 
-- [Live Website](https://nftokap.vercel.app/)
+- [Live Website](https://didierganthier.github.io/event-website/)
 
 
 ## Getting Started
