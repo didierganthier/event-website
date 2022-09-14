@@ -8,6 +8,13 @@ module.exports = {
       fontFamily: {
         lato: ['Lato', 'sans-serif'],
       },
+      backgroundImage: {
+        'background-pattern': "url('/images/backgroundPattern.png')",
+        'header-texture': "url('/images/header.png')",
+        'pattern-bg': "url('/images/pattern.jpeg')",
+        'past-first': "url('/images/past.jpg')",
+        'past-second': "url('/images/past2.jpg')",
+      },
     },
   },
   plugins: [],
